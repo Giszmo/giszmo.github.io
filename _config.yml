@@ -1,0 +1,32 @@
+title: Giszmo
+email: leo@wandersleb.de
+description: >-
+  This page was born in response to repeated need for an FAQ. Better write and
+  improve stuff than to have to type it again and again.
+baseurl: ""
+url: ""
+twitter_username: LeoWandersleb
+github_username:  giszmo
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  questions:
+    output: true
+    permalink: /:collection/:path/
+  pages:
+    output: true
+    permalink: /:path/
+defaults:
+  - scope:
+      path: ""
+      type: "questions"
+    values:
+      layout: question
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
